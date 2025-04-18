@@ -1,0 +1,207 @@
+/* === Global Styles === */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-color: #777;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* === Main Section and Video === */
+video {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.main {
+  background: linear-gradient(rgba(0, 0, 0, 0.8) 100%);
+  height: 350px;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+}
+.branding {
+  display: flex;
+}
+.branding h1 {
+  font-size: 16px;
+}
+.branding small {
+  font-size: 10px;
+}
+.branding .logo {
+  width: 70px;
+}
+.nav-item a {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  transition: 0.3s all;
+  border: 1px solid transparent;
+}
+.nav-item a.active,
+.nav-item a:hover {
+  color: #009ad8;
+  border-color: #009ad8;
+}
+
+/* === Container & Content === */
+.container#test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* === Search Form === */
+form {
+  display: flex;
+  align-items: center;
+}
+form input.form-control {
+  background-color: #ffffff33 !important;
+  color: white;
+}
+form input.form-control::placeholder {
+  color: white;
+}
+form input.form-control:focus {
+  border-color: #009ad8;
+  color: white;
+}
+form i {
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+}
+.search-btn {
+  background-color: #009ad8;
+  border: 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 1px;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+/* === Forecast Boxes === */
+.days {
+  transform: translateY(-50px);
+}
+.date {
+  word-spacing: 2px;
+}
+.box {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.general-info {
+  font-size: 15px;
+  border-bottom: 1px solid rgba(99, 99, 99, 0.2);
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.box .number {
+  font-size: 70px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.box .number span.symbol {
+  vertical-align: top;
+  font-size: 40px;
+  margin-left: 2px;
+}
+.symbol{
+  vertical-align: super;
+}
+/* === Footer === */
+.site-footer {
+  background-color: black;
+}
+.subscribe-form {
+  position: relative;
+}
+.subscribe-form input {
+  background-color: #f6f6f6;
+  padding: 10px 15px;
+  border-radius: 20px;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  color: white;
+  transition: 0.3s all ease-in-out;
+}
+.subscribe-form input:focus {
+  box-shadow: 0 0 15px #009ad8, 0 0 30px #009ad880;
+}
+.subscribe-form button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-color: #009ad8;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+}
+.social-links {
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+  justify-content: center;
+}
+
+.social-links a {
+  font-size: 20px;
+  color: #009ad8;
+  transition: 0.3s all ease-in-out;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a:hover {
+  background-color: #009ad8;
+  color: white;
+}
+
+/* .search-form .search-btn:hover {
+  color: #000;
+} */
+.days-temp {
+  background-color: black;
+}
